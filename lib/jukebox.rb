@@ -23,3 +23,28 @@ def play (input)
     puts "Invalid input, please try again"
   end
 end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run
+  puts "Please enter a command:"
+  input = gets.strip
+  while true do
+  if input == "exit"
+    exit_jukebox
+    break
+  elsif input == "help"
+    help
+  elsif input == "play"
+    play
+  elsif input == "list"
+    list
+  else
+    puts "Please enter a valid command."
+  end
+end
+end
+
+

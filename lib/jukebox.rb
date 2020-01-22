@@ -39,9 +39,9 @@ def run (songs)
   elsif input == "help"
     help
   elsif input == "play"
-    play
+    play(songs)
   elsif input == "list"
-    list
+    list(songs)
   else
     puts "Please enter a valid command."
   end

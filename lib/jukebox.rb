@@ -30,9 +30,9 @@ def exit_jukebox
 end
 
 def run
+  while true do
   puts "Please enter a command:"
   input = gets.strip
-  while true do
   if input.to_s == "exit"
     exit_jukebox
     break

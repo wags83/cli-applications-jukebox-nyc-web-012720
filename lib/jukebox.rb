@@ -8,7 +8,7 @@ def help
 end
 
 def list (song_array)
-  song_array.each_with_index |song, index| do
+  song_array.each_with_index {|song, index| do
   puts "#{index+1}. #{song}"
 end
 end

@@ -33,14 +33,14 @@ def run
   while true do
   puts "Please enter a command:"
   input = gets.strip
-  if input.to_s == "exit"
+  if input == "exit"
     exit_jukebox
     break
-  elsif input.to_s == "help"
+  elsif input == "help"
     help
-  elsif input.to_s == "play"
+  elsif input == "play"
     play
-  elsif input.to_s == "list"
+  elsif input == "list"
     list
   else
     puts "Please enter a valid command."

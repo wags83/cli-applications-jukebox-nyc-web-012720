@@ -8,8 +8,9 @@ def help
 end
 
 def list (song_array)
-  song_array.each_with_index do |song, index|
+  song_array.each_with_index |song, index| do
   puts "#{index+1}. #{song}"
+end
 end
 
 def play (songs)
@@ -44,6 +45,5 @@ def run
   else
     puts "Please enter a valid command."
   end
-end
 end
 end
